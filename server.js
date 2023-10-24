@@ -10,7 +10,7 @@ const { readdirSync } = require("fs");
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://127.0.0.1:5173", "https://expense-frontend-app.netlify.app/"],
+    origin: ["http://127.0.0.1:5173", "https://expense-frontend-two.vercel.app/"],
     credentials: true,
   })
 );
