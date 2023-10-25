@@ -10,10 +10,13 @@ const { readdirSync } = require("fs");
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://127.0.0.1:5173", "https://expense-frontend-swart.vercel.app/"],
+    origin: ["http://127.0.0.1:5173", "https://expense-frontend-swart.vercel.app"],
     credentials: true,
   })
 );
+
+app.use(cors({ origin: "*", credentials: true }));
+
 
 
 app.use(cookieParser());
